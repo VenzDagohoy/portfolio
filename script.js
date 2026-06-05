@@ -1,14 +1,10 @@
-/* ============================================================
-   script.js — Portfolio interactions
-   ============================================================ */
-
-// ── Navbar scroll effect
+// Navbar scroll effect
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 40);
 });
 
-// ── Mobile nav toggle
+// Mobile nav toggle
 const navToggle = document.getElementById('navToggle');
 const navLinks  = document.querySelector('.nav-links');
 
@@ -21,7 +17,7 @@ navLinks.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => navLinks.classList.remove('open'));
 });
 
-// ── Scroll reveal
+// Scroll reveal
 const revealEls = document.querySelectorAll(
   '.about-card, .service-card, .skills-group, .project-card, .contact-card'
 );
@@ -41,7 +37,7 @@ const observer = new IntersectionObserver((entries) => {
 
 revealEls.forEach(el => observer.observe(el));
 
-// ── Active nav link on scroll
+// Active nav link on scroll
 const sections = document.querySelectorAll('section[id]');
 const links    = document.querySelectorAll('.nav-links a');
 
