@@ -1,12 +1,9 @@
 :root {
   --navy:      #1e3370;
-  --navy-dark: #152554;
   --navy-bg:   #1a2e60;
   --light-bg:  #eaecf4;
   --white:     #ffffff;
   --text-dark: #1a1a2e;
-  --text-mid:  #333355;
-  --accent:    #1a2e60;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
