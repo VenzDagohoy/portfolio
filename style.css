@@ -1,6 +1,3 @@
-/* ============================================================
-   RESET & BASE
-   ============================================================ */
 :root {
   --navy:      #1e3370;
   --navy-dark: #152554;
@@ -32,9 +29,7 @@ ul { list-style: none; }
 }
 .section-title.light { color: var(--white); }
 
-/* ============================================================
-   NAVBAR
-   ============================================================ */
+/* NAVBAR */
 .navbar {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -72,9 +67,7 @@ ul { list-style: none; }
 .nav-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
 .nav-toggle span { display: block; width: 22px; height: 2px; background: var(--white); border-radius: 99px; }
 
-/* ============================================================
-   HERO
-   ============================================================ */
+/* HERO */
 .hero {
   background: var(--navy-bg);
   padding: 80px 24px 0;
@@ -128,9 +121,7 @@ ul { list-style: none; }
   max-height: 280px;
 }
 
-/* ============================================================
-   ABOUT
-   ============================================================ */
+/* ABOUT */
 .about { background: var(--light-bg); }
 
 .about-text {
@@ -141,9 +132,7 @@ ul { list-style: none; }
   text-align: justify;
 }
 
-/* ============================================================
-   SERVICES
-   ============================================================ */
+/* SERVICES */
 .services { background: var(--navy-bg); }
 
 .services-table {
@@ -179,9 +168,7 @@ ul { list-style: none; }
 
 .svc-icon { margin-right: 6px; }
 
-/* ============================================================
-   SKILLS
-   ============================================================ */
+/* SKILLS */
 .skills { background: var(--light-bg); }
 
 .skills-body {
@@ -212,9 +199,7 @@ ul { list-style: none; }
   color: var(--text-dark);
 }
 
-/* ============================================================
-   PORTFOLIO
-   ============================================================ */
+/* PORTFOLIO */
 .portfolio { background: var(--navy-bg); }
 
 .portfolio-list {
@@ -259,16 +244,15 @@ ul { list-style: none; }
 
 .project-img img {
   width: 100%;
-  border-radius: 6px;
+  border-radius: 8px;
   object-fit: cover;
   object-position: top;
-  max-height: 200px;
+  max-height: 220px;
   border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 
-/* ============================================================
-   CONTACT
-   ============================================================ */
+/* CONTACT */
 .contact { background: var(--light-bg); }
 
 .contact-layout {
@@ -276,19 +260,36 @@ ul { list-style: none; }
   grid-template-columns: 1fr 1fr;
   gap: 32px;
   align-items: start;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .contact-map {
-  height: 240px;
+  height: 260px;
   border-radius: 8px;
   overflow: hidden;
   border: 1px solid #ccd;
+}
+
+.contact-map a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+  pointer-events: none;
 }
 
 .contact-details {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  padding-top: 4px;
 }
 
 .contact-item h3 {
@@ -341,9 +342,7 @@ ul { list-style: none; }
 
 .contact-email:hover { color: var(--navy); }
 
-/* ============================================================
-   FOOTER
-   ============================================================ */
+/* FOOTER */
 .footer {
   background: #111;
   color: rgba(255,255,255,0.7);
@@ -352,9 +351,7 @@ ul { list-style: none; }
   font-size: 0.82rem;
 }
 
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
+/* RESPONSIVE */
 @media (max-width: 640px) {
   .nav-links { display: none; }
   .nav-links.open {
