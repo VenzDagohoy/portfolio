@@ -369,8 +369,8 @@ ul { list-style: none; }
   .nav-toggle { display: flex; }
 
   .hero-inner { flex-direction: column-reverse; align-items: center; }
-  .hero-text { text-align: center; padding-bottom: 20px; }
-  .hero-photo { width: 160px; }
+  .hero-text { text-align: center; padding-bottom: 20px; margin-top: 16px;}
+  .hero-photo { width: 180px; align-self: center;}
 
   .project { grid-template-columns: 1fr; }
   .contact-layout { grid-template-columns: 1fr; }
