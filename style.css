@@ -169,9 +169,10 @@ ul { list-style: none; }
 .skills { background: var(--light-bg); }
 
 .skills-body {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  align-items: start;
 }
 
 .skills-group h3 {
@@ -375,4 +376,8 @@ ul { list-style: none; }
   .project { grid-template-columns: 1fr; }
   .contact-layout { grid-template-columns: 1fr; }
   .contact-map { height: 200px; }
+
+  .skills-body {
+    grid-template-columns: 1fr;
+  }
 }
